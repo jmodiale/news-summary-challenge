@@ -1,4 +1,4 @@
-const getHeadlines = require('./index');
+const getNews = require('./index');
 const fs = require('fs');
 require('jest-fetch-mock').enableMocks();
 

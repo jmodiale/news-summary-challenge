@@ -1,0 +1,29 @@
+#root {
+  padding: 5px;
+  background-color: rgb(164, 123, 123);
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#root > h1, .articles {
+  margin: 10px;
+  padding: 5px;
+}
+
+.articles {
+  background: white;
+}
+
+.articles > a {
+  text-decoration: none;
+  color: black;
+  font-size:20px;
+  font-weight: bold;
+  margin-top:60px;
+}
+
+img{
+  width:50%;
+}
