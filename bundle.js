@@ -33,6 +33,22 @@
           });
         });
       }
+      function search() {
+        const inputSearch = document.createElement("input");
+        inputSearch.setAttribute("type", "search");
+        inputSearch.placeholder = "Search...";
+        const root = document.getElementById("root");
+        const titles = document.getElementsByClassName("title");
+        console.log(titles);
+        root.append(inputSearch);
+        inputSearch.addEventListener("keyup", (e) => {
+          const searchString = e.target.value;
+          for (i = 0; i < titles.length; i++) {
+            titles[i].innerText = searchString.toLowerCase().includes(searchString) ? titles[i].style.display = "" : titles[i].style.display = "none";
+          }
+        });
+      }
+      search();
       getNews();
       module.exports = getNews();
     }
